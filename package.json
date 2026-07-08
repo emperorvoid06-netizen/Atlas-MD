@@ -3,8 +3,11 @@
   "version": "4.0.1",
   "description": "The future of WhatsApp bots with plugin support.",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
+"main": "index.js",
+"engines": {
+  "node": "20.x"
+},
+"scripts": {
     "test": "node --check index.js && node --check Configurations.js && node --check Core.js",
     "start": "node --max-old-space-size=8000 --expose-gc index.js"
   },
